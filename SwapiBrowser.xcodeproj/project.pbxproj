@@ -11,6 +11,13 @@
 		84BBCCB02A73B01800A2E0F5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BBCCAF2A73B01800A2E0F5 /* ContentView.swift */; };
 		84BBCCB22A73B01900A2E0F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84BBCCB12A73B01900A2E0F5 /* Assets.xcassets */; };
 		84BBCCB52A73B01900A2E0F5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84BBCCB42A73B01900A2E0F5 /* Preview Assets.xcassets */; };
+		84BBCCBF2A73B0F400A2E0F5 /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BBCCBE2A73B0F400A2E0F5 /* Film.swift */; };
+		84BBCCC12A73B12400A2E0F5 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BBCCC02A73B12400A2E0F5 /* Character.swift */; };
+		84BBCCC32A73B13900A2E0F5 /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BBCCC22A73B13900A2E0F5 /* Planet.swift */; };
+		84BBCCC52A73B15400A2E0F5 /* HttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BBCCC42A73B15400A2E0F5 /* HttpService.swift */; };
+		84BBCCC72A73B17200A2E0F5 /* SwapiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BBCCC62A73B17200A2E0F5 /* SwapiService.swift */; };
+		84BBCCC92A73C28E00A2E0F5 /* SWPagingResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BBCCC82A73C28E00A2E0F5 /* SWPagingResponse.swift */; };
+		84BBCCCF2A7448EA00A2E0F5 /* SWObjectWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BBCCCE2A7448EA00A2E0F5 /* SWObjectWrapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,13 @@
 		84BBCCAF2A73B01800A2E0F5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		84BBCCB12A73B01900A2E0F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84BBCCB42A73B01900A2E0F5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		84BBCCBE2A73B0F400A2E0F5 /* Film.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
+		84BBCCC02A73B12400A2E0F5 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		84BBCCC22A73B13900A2E0F5 /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
+		84BBCCC42A73B15400A2E0F5 /* HttpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpService.swift; sourceTree = "<group>"; };
+		84BBCCC62A73B17200A2E0F5 /* SwapiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapiService.swift; sourceTree = "<group>"; };
+		84BBCCC82A73C28E00A2E0F5 /* SWPagingResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWPagingResponse.swift; sourceTree = "<group>"; };
+		84BBCCCE2A7448EA00A2E0F5 /* SWObjectWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWObjectWrapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +65,9 @@
 		84BBCCAC2A73B01800A2E0F5 /* SwapiBrowser */ = {
 			isa = PBXGroup;
 			children = (
+				84BBCCBD2A73B0C000A2E0F5 /* Views */,
+				84BBCCBC2A73B0AC00A2E0F5 /* Service */,
+				84BBCCBB2A73B08C00A2E0F5 /* Model */,
 				84BBCCAD2A73B01800A2E0F5 /* SwapiBrowserApp.swift */,
 				84BBCCAF2A73B01800A2E0F5 /* ContentView.swift */,
 				84BBCCB12A73B01900A2E0F5 /* Assets.xcassets */,
@@ -65,6 +82,34 @@
 				84BBCCB42A73B01900A2E0F5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		84BBCCBB2A73B08C00A2E0F5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84BBCCBE2A73B0F400A2E0F5 /* Film.swift */,
+				84BBCCC02A73B12400A2E0F5 /* Character.swift */,
+				84BBCCC22A73B13900A2E0F5 /* Planet.swift */,
+				84BBCCC82A73C28E00A2E0F5 /* SWPagingResponse.swift */,
+				84BBCCCE2A7448EA00A2E0F5 /* SWObjectWrapper.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		84BBCCBC2A73B0AC00A2E0F5 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				84BBCCC42A73B15400A2E0F5 /* HttpService.swift */,
+				84BBCCC62A73B17200A2E0F5 /* SwapiService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		84BBCCBD2A73B0C000A2E0F5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +183,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				84BBCCB02A73B01800A2E0F5 /* ContentView.swift in Sources */,
+				84BBCCBF2A73B0F400A2E0F5 /* Film.swift in Sources */,
 				84BBCCAE2A73B01800A2E0F5 /* SwapiBrowserApp.swift in Sources */,
+				84BBCCC12A73B12400A2E0F5 /* Character.swift in Sources */,
+				84BBCCCF2A7448EA00A2E0F5 /* SWObjectWrapper.swift in Sources */,
+				84BBCCC32A73B13900A2E0F5 /* Planet.swift in Sources */,
+				84BBCCC72A73B17200A2E0F5 /* SwapiService.swift in Sources */,
+				84BBCCC52A73B15400A2E0F5 /* HttpService.swift in Sources */,
+				84BBCCC92A73C28E00A2E0F5 /* SWPagingResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
