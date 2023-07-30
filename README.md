@@ -3,8 +3,8 @@
 ## Protokoll
 
 <i>Freitag: 28.07.23 - ca. 4.5 h </i>
+09:00 Uhr bis ca. 22:00 Uhr mit einigen längeren Pausen dazwischen. 
 
-Ab 09:00 Uhr bis ca. 22:00 Uhr mit einigen längeren Pausen dazwischen. 
 - Api anschauen
 - Basis Struktur überlegen
 - Repository und Project anlegen
@@ -15,12 +15,14 @@ Ab 09:00 Uhr bis ca. 22:00 Uhr mit einigen längeren Pausen dazwischen.
 - Test / Bugfix / Kleine Refactorings
 
 <i>Sonntag: 30.07.23 - ca. 3.0 h</i>
+11:30 Uhr bis ca. 15:00 Uhr mit einigen längeren Pausen dazwischen. 
 
 - Anlegen ListView, DetailView
 - Anpassen ContentView
 - Aufbau Basisnavigation
 - Integration Service Komponenten 
 - Basis Layout List
+- Basis Layout Details
 
 ## Hints 
 
