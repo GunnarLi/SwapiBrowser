@@ -16,26 +16,26 @@ enum SWObjectWrapper: Decodable {
     enum CodingKeys: CodingKey, CaseIterable {
         case url
     }
-    
+
     init(from decoder: Decoder) throws {
         
         let container = try decoder.container(keyedBy: CodingKeys.self)
         let singleContainer = try decoder.singleValueContainer()
-        let name = try container.decodeIfPresent(String.self, forKey: .url)
+        let url = try container.decodeIfPresent(String.self, forKey: .url)
         
-        guard let name = name else {
+        guard let url = url else {
             self = SWObjectWrapper.unknown
             return
         }
         
-        switch name {
-            case _ where name.contains("https://swapi.dev/api/films"):
+        switch url {
+            case _ where url.contains(Context.film.path):
                 let value = try singleContainer.decode(Film.self)
                 self = SWObjectWrapper.film(value)
-            case _ where name.contains("https://swapi.dev/api/people"):
+            case _ where url.contains(Context.character.path):
                 let value = try singleContainer.decode(Character.self)
                 self = SWObjectWrapper.character(value)
-            case _ where name.contains("https://swapi.dev/api/planets"):
+            case _ where url.contains(Context.planet.path):
                 let value = try singleContainer.decode(Planet.self)
                 self = SWObjectWrapper.planet(value)
             default:

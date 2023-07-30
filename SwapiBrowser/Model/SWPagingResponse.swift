@@ -9,6 +9,10 @@ import Foundation
 
 protocol SWObject {}
 
+/// maps to a request without out an id, which returns all elements of the wanted category.
+///
+/// The paging mechanic is implemented in SWApiService
+/// 
 struct SWPagingResponse: Decodable {
 
     let count: Int32

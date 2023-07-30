@@ -5,13 +5,17 @@
 //  Created by Admin on 28.07.23.
 //
 
+// TODO: add better error handling
+
 import Foundation
 
 /// simple class to fire async http requests.
-/// TODO: add better error handlinig
 class HttpService {
     
-    /// Load the data by http and decodes the response to the given type
+    /// Load the data by http and decodes the response to the defined type T
+    ///
+    /// e.g. let film: Film = httpService.requestType(urlString: "\(Context.film.path)\(id)", type: Film.self)
+    ///
     /// - Parameters:
     ///   - urlString: the url to load from
     ///   - type: the type which is expected
@@ -23,7 +27,8 @@ class HttpService {
         return swObject
     }
     
-    /// Loads the resource at the given url string
+    /// Loads the resource as Data object at the given url string
+    ///
     /// - Parameter urlString: the url as String
     /// - Returns: the response as data or nil
     func request(from urlString: String) async -> Data? {
@@ -51,10 +56,11 @@ class HttpService {
     }
 }
 
-/// useful extension to Data
+/// Extension of Data
 extension Data {
 
     /// Decode the current data instance to the associated generic type
+    ///
     /// - Returns: the decoded object or nil
     public func decode<T: Decodable>() -> T? {
         do {
