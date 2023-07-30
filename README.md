@@ -14,7 +14,7 @@ Ab 09:00 Uhr bis ca. 22:00 Uhr mit einigen längeren Pausen dazwischen.
 - SWPagingResponse, SWObjectWrapper, SWWrapperList  haben sich während der Entwicklung herausgebildet
 - Test / Bugfix / Kleine Refactorings
 
-<i>Sonntag: 30.07.23 - ca. 2.5 h</i>
+<i>Sonntag: 30.07.23 - ca. 3.0 h</i>
 
 - Anlegen ListView, DetailView
 - Anpassen ContentView
