@@ -8,12 +8,11 @@
 import Foundation
 
 /// maps to the https://swapi.dev/api/films/<id> response
-struct Film: Decodable, SWObject, Equatable {
-    
+struct Film: Decodable, SWObject, Equatable, Identifiable {
     static func == (lhs: Film, rhs: Film) -> Bool {
         return lhs.url == rhs.url
     }
-    
+    let id = UUID()
     let url: String
     let title: String
     let episodeID: Int

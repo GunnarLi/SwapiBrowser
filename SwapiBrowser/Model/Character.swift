@@ -8,12 +8,12 @@
 import Foundation
 
 /// maps to the https://swapi.dev/api/people/<id> response
-struct Character: Codable, SWObject, Equatable {
+struct Character: Codable, SWObject, Equatable, Identifiable {
     
     static func == (lhs: Character, rhs: Character) -> Bool {
         return lhs.url == rhs.url
     }
-    
+    let id = UUID()
     let name: String
     let height: String
     let mass: String

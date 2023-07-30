@@ -8,12 +8,12 @@
 import Foundation
 
 /// maps to the https://swapi.dev/api/planets/<id> response
-struct Planet: Codable, SWObject, Equatable {
+struct Planet: Codable, SWObject, Equatable, Identifiable {
     
     static func == (lhs: Planet, rhs: Planet) -> Bool {
         return lhs.url == rhs.url
     }
-    
+    let id = UUID()
     let name: String
     let rotationPeriod: String
     let obitalPeriod: String

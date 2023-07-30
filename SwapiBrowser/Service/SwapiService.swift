@@ -15,7 +15,7 @@ import Foundation
 /// - the responses for the load all data methods are beeing cached after the first request, so no uneccessary requests are fired
 /// - the current paging mechanism of the SWApi is supported
 ///
-class SWApiService {
+class SWApiService: ObservableObject {
     
     let httpService = HttpService()
     
