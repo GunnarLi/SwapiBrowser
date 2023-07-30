@@ -12,6 +12,9 @@ import Foundation
 /// simple class to fire async http requests.
 class HttpService {
     
+    // #MARK: -
+    // #MARK: Request methods
+
     /// Load the data by http and decodes the response to the defined type T
     ///
     /// e.g. let film: Film = httpService.requestType(urlString: "\(Context.film.path)\(id)", type: Film.self)
@@ -55,6 +58,9 @@ class HttpService {
         }
     }
 }
+
+// #MARK: -
+// #MARK: Data extension
 
 /// Extension of Data
 extension Data {

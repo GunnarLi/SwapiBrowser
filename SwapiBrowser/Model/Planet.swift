@@ -16,7 +16,7 @@ struct Planet: Codable, SWObject, Equatable, Identifiable {
     let id = UUID()
     let name: String
     let rotationPeriod: String
-    let obitalPeriod: String
+    let orbitalPeriod: String
     let diameter: String
     let climate: String
     let gravity: String
@@ -33,7 +33,7 @@ struct Planet: Codable, SWObject, Equatable, Identifiable {
 
         case name = "name"
         case rotationPeriod = "rotation_period"
-        case obitalPeriod = "orbital_period"
+        case orbitalPeriod = "orbital_period"
         case diameter = "diameter"
         case climate = "climate"
         case gravity = "gravity"

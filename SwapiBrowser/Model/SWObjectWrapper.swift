@@ -7,6 +7,10 @@
 
 import Foundation
 
+// #MARK: -
+// #MARK: Decodable methods
+// #TODO: needs to be extended in case of new category
+
 enum SWObjectWrapper: Decodable {
     case film(Film)
     case character(Character)
@@ -28,6 +32,7 @@ enum SWObjectWrapper: Decodable {
             return
         }
         
+        
         switch url {
             case _ where url.contains(Context.film.path):
                 let value = try singleContainer.decode(Film.self)
@@ -43,6 +48,11 @@ enum SWObjectWrapper: Decodable {
         }
     }
 }
+
+// #MARK: -
+// #MARK: Category methods
+// #TODO: needs to be extended in case of new category
+
 
 /// needs to be extended when a new type is introduced
 extension SWObjectWrapper {

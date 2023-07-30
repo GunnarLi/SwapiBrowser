@@ -18,11 +18,18 @@ import Foundation
 class SWApiService: ObservableObject {
     
     let httpService = HttpService()
-    
+
+    // #MARK: -
+    // #MARK: Category data
+    // #TODO: needs to be extended in case of new category
     var allFilms = [Film]()
     var allCharacters = [Character]()
     var allPlanets = [Planet]()
 
+    
+    // #MARK: -
+    // #MARK: Request categories
+    // #TODO: needs to be extended in case of new category
     func requestFilm(with id: String) async -> Film? {
         return await httpService.requestType(urlString: "\(Context.film.path)\(id)", type: Film.self)
     }
@@ -35,6 +42,9 @@ class SWApiService: ObservableObject {
         return await httpService.requestType(urlString: "\(Context.planet.path)\(id)", type: Planet.self)
     }
     
+    // #MARK: -
+    // #MARK: Request list of category
+    // #TODO: needs to be extended in case of new category
     func requestAllFilms() async -> [Film] {
         if allFilms.count == 0 {allFilms = await self.requestAllData(for: Context.film.path).asFilmList()}
         return allFilms
@@ -54,6 +64,8 @@ class SWApiService: ObservableObject {
 /// private implementations
 extension SWApiService {
 
+    // #MARK: -
+    // #MARK: Paging request
     // implements the paging method of the SWApi. It loads all data until value 'next' of the response become nil
     private func requestAllData(for urlString: String) async -> SWWrapperList {
         var tmpPath = urlString

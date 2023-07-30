@@ -44,7 +44,7 @@ struct FilmList: View {
             }
         } else {
             List(self.allFilms) { film in
-                NavigationLink(destination: DetailView())
+                NavigationLink(destination: DetailViewFilm(film: film))
                 {
                     HStack {
                         Text("\(film.title)")
@@ -70,7 +70,7 @@ struct CharacterList: View{
                 }
         } else {
             List(self.allCharacters) { character in
-                NavigationLink(destination: DetailView())
+                NavigationLink(destination: DetailViewCharacter(character: character))
                 {
                     HStack {
                         Text("\(character.name)")
@@ -96,7 +96,7 @@ struct PlanetList: View {
                 }
         } else {
             List(allPlanets) { planet in
-                NavigationLink(destination: DetailView())
+                NavigationLink(destination: DetailViewPlanet(planet: planet))
                 {
                     HStack {
                         Text("\(planet.name)")
