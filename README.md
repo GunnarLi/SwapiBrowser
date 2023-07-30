@@ -2,7 +2,7 @@
 
 ## Protokoll
 
-<i>Freitag: 28.07.23 - ca. 4.5 h <i>
+<i>Freitag: 28.07.23 - ca. 4.5 h </i>
 
 Ab 09:00 Uhr bis ca. 22:00 Uhr mit einigen längeren Pausen dazwischen. 
 - Api anschauen
